@@ -1,0 +1,13 @@
+.bodyset{
+    background-color: #fefae0;
+    padding: 20px;
+}
+
+.standart{
+    background-color: #faedcd;
+    border-style: solid;
+    border-width: 30px;
+    border-color: #faedcd;
+    border-radius: 10px;
+}
+
