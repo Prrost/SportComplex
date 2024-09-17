@@ -118,7 +118,7 @@ a{
 }
 
 .a{
-   text-decoration: underline;
+    text-decoration: underline;
 }
 
 .text-size{
@@ -144,4 +144,13 @@ a{
 .wide-div-button{
     width: 100%;
     display: flex;
+}
+
+.hr-colour-brown{
+    background-color: #49372a;
+}
+
+
+.hr-colour-green{
+    background-color: #b9f6a5;
 }
