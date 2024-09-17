@@ -1,0 +1,120 @@
+/* General Styling */
+.bodyset-dance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3e5f5; /* Light lavender */
+}
+
+.standart-dance {
+    background-color: #e1bee7; /* Lighter purple */
+    border-style: solid;
+    border-width: 30px;
+    border-color: #e1bee7; /* Matches the background */
+    border-radius: 10px;
+}
+
+.main-div-dance {
+    width: 70%;
+    align-content: center;
+    background-color: #c9bcf5;
+    padding: 20px;
+    border: 0px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #ab47bc;
+}
+
+.all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Container for Dancing Classes Section */
+.top-word-colour-dance {
+    background-color: #f3e5f5; /* Light lavender or light purple */
+    color: #6a1b9a; /* Dark purple for text */
+    width: 100%;
+    border: 2px solid #ba68c8; /* Medium purple border */
+    border-radius: 10px;
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional subtle shadow for depth */
+    text-align: center;
+    margin: 20px 0; /* Optional margin for spacing */
+}
+
+
+
+
+.img-main-dance {
+    box-shadow: 0 4px 10px #ab47bc; /* Purple shadow */
+    border-radius: 5px;
+    width: 100%;
+}
+
+.img-secondary-dance {
+    box-shadow: 0 4px 10px #ab47bc;
+    border-radius: 5px;
+    height: 300px;
+}
+
+hr {
+    height: 3px;
+    background-color: #ab47bc; /* Purple horizontal line */
+}
+
+.wide-div {
+    width: 100%;
+    text-align: center;
+}
+
+.button-style-dance {
+    background-color: #ba68c8; /* Medium purple */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    transition-duration: 0.3s;
+    border: 2px solid #ab47bc;
+}
+
+.button-style-dance:hover {
+    background-color: #ffffff;
+    color: #ab47bc;
+    border: 2px solid #ab47bc;
+    box-shadow: 0 4px 10px #ab47bc;
+}
+
+a {
+    color: #6a1b9a; /* Dark purple */
+    text-decoration: none;
+}
+
+.a {
+    text-decoration: underline;
+}
+
+.text-size {
+    font-size: 20px;
+}
+
+.text-size-15 {
+    font-size: 15px;
+}
+
+#move-left {
+    justify-content: start;
+}
+
+#white-text {
+    color: white;
+}
+
+.wide-div-button {
+    width: 100%;
+    display: flex;
+}
