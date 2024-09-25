@@ -3,14 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f3e5f5; /* Light lavender */
+    background-color: #fff4e6; /* Light lavender */
 }
 
 .standart-dance {
-    background-color: #e1bee7; /* Lighter purple */
+    background-color: #faedcd; /* Lighter purple */
     border-style: solid;
     border-width: 30px;
-    border-color: #e1bee7; /* Matches the background */
+    border-color: #faedcd; /* Matches the background */
     border-radius: 10px;
 }
 
