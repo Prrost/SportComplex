@@ -27,6 +27,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-left: 30px;
+    padding-right: 10px;
 }
 
 .top-word-colour-index{
@@ -38,8 +40,16 @@
 }
 
 
-.top-word-colour-FH{
-    background-color: #49372a;
+.top-word-colour-F{
+    background-color: #3e962a;
+    width: 100%;
+    border-style: solid;
+    border-radius: 10px;
+
+}
+
+.top-word-colour-H{
+    background-color: #1a439b;
     width: 100%;
     border-style: solid;
     border-radius: 10px;
