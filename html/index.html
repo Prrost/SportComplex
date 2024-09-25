@@ -4,96 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
 
 </head>
 <body class="bodyset">
 <div class="standart, main-div">
-    <div class="all-center">
-        <div class="top-word-colour-index">
-            <h1 class="all-center">Sport Complex</h1>
+
+
+    <nav class="navbar navbar-dark navbar-expand-lg bg-success bg-gradient">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">SportComplex</a>
+            <div class="d-flex">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Swimming.html">Swimming</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Hockey.html">Hockey</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Football.html">Football</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Gym.html">Gym</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Dancing.html">Dancing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </nav>
+
+    <div>
+
         <br><br>
 
-        <div>
+        <div class="all-center">
             <img src="/img/complex.jpg" alt="Sport complex picture" class="img-main">
         </div>
 
         <br>
 
-        <div class="wide-div">
-            <hr noshade="" class="hr-colour-green">
+        <div class="wide-div all-center">
+            <hr class="border border-success border-2 opacity-75 width-90">
             <h2>Affordable access to a variety of sports activities! </h2>
             <p class="text-size">We offer a large swimming pool, a dance studio, hockey and football fields, and a fully
                 equipped gym –
                 all at
                 affordable prices!</p>
-            <hr class="hr-colour-green" noshade="" >
-        </div>
-
-        <div class="wide-div">
-            <h2>All sports</h2>
-            <table>
-                <tr>
-                    <button type="button" class="button-style"><a href="Swimming.html">Swimming</a></button>
-                </tr>
-                <tr>
-                    <button type="button" class="button-style"><a href="Dancing.html">Dancing</a></button>
-                </tr>
-                <tr>
-                    <button type="button" class="button-style"><a href="Hockey.html">Hockey</a></button>
-                </tr>
-                <tr>
-                    <button type="button" class="button-style"><a href="Football.html">Football</a></button>
-                </tr>
-                <tr>
-                    <button type="button" class="button-style"><a href="Gym.html">Gym</a></button>
-                </tr>
-            </table>
-            <br>
-            <hr noshade="" class="hr-colour-green">
+            <hr class="border border-success border-2 opacity-75 width-90">
         </div>
 
 
-        <div class="wide-div, all-center">
-
-            <h2>Our instructors</h2>
-            <table>
-                <tr>
-                    <td><img src="/img/rost.png" alt="Rostislav picture" class="img-secondary"></td>
-                    <td><img src="/img/Nartay.jpeg" alt="Nartay picture" class="img-secondary"></td>
-                    <td><img src="/img/Mansur.jpeg" alt="Mansur picture" class="img-secondary"></td>
-                </tr>
-
-                <tr>
-                    <td><p>Rostislav</p></td>
-                    <td><p>Nartay</p></td>
-                    <td><p>Mansur</p></td>
-                </tr>
-
-
-            </table>
-
-        </div>
-
-        <div class="wide-div">
-            <hr noshade="" class="hr-colour-green">
-        </div>
-        <div class="wide-div, all-center">
-
-            <footer>
-                <h2>Group members:</h2>
-                <h3>SE-2327</h3>
-                <div>
-                    <ul>
-                        <li>Rostislav Prettser - Tech Lead</li>
-                        <li>Shamil Nartay - Developer</li>
-                        <li>Serikov Mansur - Developer</li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
     </div>
+
+
+    <div class="wide-div, all-center">
+
+        <h2>Our instructors</h2>
+
+        <table>
+            <tr>
+                <td>
+                    <div class="card" style="width: 18rem;">
+                        <img src="/img/rost.png" class="card-img-top img-secondary" alt="Rostislav picture">
+                        <div class="card-body">
+                            <p class="card-text">Rostislav Prettser</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card" style="width: 18rem;">
+                        <img src="/img/Nartay.jpeg" class="card-img-top img-secondary" alt="Nartay picture">
+                        <div class="card-body">
+                            <p class="card-text">Nartay Shamil</p>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card" style="width: 18rem;">
+                        <img src="/img/Mansur.jpeg" class="card-img-top img-secondary" alt="Mansur picture">
+                        <div class="card-body">
+                            <p class="card-text">Mansur Serikov</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <br><br>
+
+    <div class="div-footer">
+        <footer>
+            <h2>Group members:</h2>
+            <h3>SE-2327</h3>
+            <div>
+                <ul>
+                    <li>Rostislav Prettser - Tech Lead</li>
+                    <li>Shamil Nartay - Developer</li>
+                    <li>Serikov Mansur - Developer</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</div>
 </div>
 </body>
 </html>

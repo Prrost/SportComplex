@@ -18,7 +18,6 @@
     width: 70%;
     align-content: center;
     background-color: #c9bcf5;
-    padding: 20px;
     border: 0px solid black;
     border-radius: 10px;
     box-shadow: 0 4px 10px #ab47bc;
@@ -117,4 +116,11 @@ a {
 .wide-div-button {
     width: 100%;
     display: flex;
+}
+
+.div-footer{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(196, 169, 221);
+
 }
