@@ -16,7 +16,7 @@
 .main-div{
     width: 70%;
     align-content: center;
-    background-color: rgb(256, 256, 256);
+    background-color: rgb(217, 197, 149);
     border: 0px solid black;
     box-shadow: 0 4px 10px black;
 }
@@ -163,6 +163,6 @@ a{
 .div-footer-b{
     padding-left: 10px;
     padding-bottom: 10px;
-    background-color: rgb(223, 221, 205);
+    background-color: rgba(187, 161, 96, 0.62);
 
 }
