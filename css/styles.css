@@ -17,9 +17,7 @@
     width: 70%;
     align-content: center;
     background-color: rgb(256, 256, 256);
-    padding: 20px;
     border: 0px solid black;
-    border-radius: 10px;
     box-shadow: 0 4px 10px black;
 }
 
@@ -33,9 +31,6 @@
 .top-word-colour-index{
     background-color: #b9f6a5;
     width: 100%;
-    border-style: solid;
-    border-radius: 10px;
-
 }
 
 
@@ -44,24 +39,20 @@
     width: 100%;
     border-style: solid;
     border-radius: 10px;
-
 }
+
 
 .img-main{
     box-shadow: 0 4px 10px black;
     border-radius: 5px;
-    width: 100%;
+    width: 95%;
 }
 
 .img-secondary{
-    box-shadow: 0 4px 10px black;
-    border-radius: 5px;
     height: 300px;
 }
 
-hr{
-    height:3px
-}
+
 
 .wide-div{
     width: 100%;
@@ -153,4 +144,23 @@ a{
 
 .hr-colour-green{
     background-color: #b9f6a5;
+    height: 3px;
+}
+
+.width-90{
+    width: 90%;
+}
+
+.div-footer-g{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(182, 220, 176, 0.4);
+
+}
+
+.div-footer-b{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(223, 221, 205);
+
 }
