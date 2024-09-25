@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e0f7fa; /* Light water blue */
+    background-color: #fff4e6; /* Light water blue */
 }
 
 .standart-swim{
@@ -111,8 +111,17 @@ a{
     display: flex;
 }
 
+.hr-colour-green{
+    background-color: #a078ff;
+    height: 3px;
+}
+
 .div-footer{
     padding-left: 10px;
     padding-bottom: 10px;
-    background-color: rgba(56, 135, 238, 0.4);
+    background-color: rgba(182, 214, 218, 0.4);
+
+}
+.Swimming-html {
+    color: blue;
 }
