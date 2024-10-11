@@ -6,6 +6,10 @@
     <title>Main</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="/scripts/rostislavjs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 
 </head>
 <body class="bodyset">
@@ -75,7 +79,7 @@
         <table>
             <tr>
                 <td>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <img src="/img/rost.png" class="card-img-top img-secondary" alt="Rostislav picture">
                         <div class="card-body">
                             <p class="card-text">Rostislav Prettser</p>
@@ -83,7 +87,7 @@
                     </div>
                 </td>
                 <td>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <img src="/img/Nartay.jpeg" class="card-img-top img-secondary" alt="Nartay picture">
                         <div class="card-body">
                             <p class="card-text">Nartay Shamil</p>
@@ -91,7 +95,7 @@
                     </div>
                 </td>
                 <td>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <img src="/img/Mansur.jpeg" class="card-img-top img-secondary" alt="Mansur picture">
                         <div class="card-body">
                             <p class="card-text">Mansur Serikov</p>
@@ -100,12 +104,40 @@
                 </td>
             </tr>
         </table>
-
     </div>
+
     <br><br>
+
 
     <div class="div-footer-g">
         <footer>
+
+
+            <div>
+                <div>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-1">
+                            <p style="font-size: 25px; ">FAQ</p>
+                        </div>
+                    </div>
+                    <div class="all-center">
+                        <p onclick="fold()" style="font-size: 24px">What time is it now?</p>
+                        <div id="fold">
+                            <span id="datetime"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div>
+                <hr class="border border-success border-2 opacity-75 width-100" style="margin-right: 10px">
+            </div>
+
             <h2>Group members:</h2>
             <h3>SE-2327</h3>
             <div>

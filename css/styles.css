@@ -16,7 +16,7 @@
 .main-div{
     width: 70%;
     align-content: center;
-    background-color: rgb(217, 197, 149);
+    background-color: rgb(246, 231, 186);
     border: 0px solid black;
     box-shadow: 0 4px 10px black;
 }
@@ -165,4 +165,8 @@ a{
     padding-bottom: 10px;
     background-color: rgba(187, 161, 96, 0.62);
 
+}
+
+#fold{
+    display: none;
 }
