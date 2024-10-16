@@ -100,8 +100,27 @@
             <p>If you have any questions or need more information, please feel free to <a
                     href="mailto:support@sportscomplex.com" class="a">contact us</a>.</p>
             <hr class="border border-secondary border-2 opacity-75 width-90">
-
+            <!-- Button to change the background color -->
+            <button id="changeColorBtn" class="button-style-dance">Change Background Color</button>
         </div>
+
+        <!-- Registration Form -->
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirmPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 
     <div class="div-footer">
@@ -119,5 +138,8 @@
     </div>
 
 </div>
+
+<!-- Подключение скрипта для изменения фона и валидации формы -->
+<script src="/scripts/nartay.js"></script>
 </body>
 </html>
