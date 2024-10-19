@@ -127,3 +127,11 @@ a{
 .Swimming-html {
     color: blue;
 }
+
+.nav-link:focus {
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
