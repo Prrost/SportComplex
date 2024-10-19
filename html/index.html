@@ -19,7 +19,7 @@
 
     <nav class="navbar navbar-dark navbar-expand-lg bg-success bg-gradient">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">SportComplex</a>
+            <a class="navbar-brand" href="index.html" id="homeButton">SportComplex</a>
             <div class="d-flex">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -27,7 +27,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbarMenu">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="Swimming.html">Swimming</a>
                         </li>
@@ -51,7 +51,7 @@
 
     <div>
         <br><br>
-
+            <div class="all-center"><h1 id="greeting"></h1></div>
         <div class="all-center">
             <img src="/img/complex.jpg" alt="Sport complex picture" class="img-main">
         </div>
@@ -72,22 +72,39 @@
 
     <!--Popup-->
     <div class="text-center">
-        <button class="btn btn-primary" onclick="openForm()">Subscribe</button>
+        <button class="btn btn-primary" id="subscribeButton" onclick="openForm()">Subscribe</button>
     </div>
 
-
     <div class="overlay" id="overlay" onclick="closeForm()"></div>
-
 
     <div class="popup-form" id="popupForm">
         <span class="close-btn" onclick="closeForm()">&times;</span>
         <h2>Subscribe to our Newsletter</h2>
-        <form action="#">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <button type="submit" class="btn btn-success">Submit</button>
+
+        <form id="multiStepForm">
+
+            <div class="form-step" id="step1">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <button type="button" class="btn btn-success" onclick="nextStep(1)">Next</button>
+            </div>
+
+
+            <div class="form-step" id="step2" style="display: none;">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <button type="button" class="btn btn-secondary" onclick="prevStep(2)">Back</button>
+                <button type="button" class="btn btn-success" onclick="nextStep(2)">Next</button>
+            </div>
+
+
+            <div class="form-step" id="step3" style="display: none;">
+                <h3>Confirm your information</h3>
+                <p>Name: <span id="confirmName"></span></p>
+                <p>Email: <span id="confirmEmail"></span></p>
+                <button type="button" class="btn btn-secondary" onclick="prevStep(3)">Back</button>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
         </form>
     </div>
 
