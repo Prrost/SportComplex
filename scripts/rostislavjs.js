@@ -55,3 +55,84 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+
+//Responding to Events with Callbacks
+let currentStep = 0;
+
+function openForm() {
+    document.getElementById('overlay').style.display = 'block';
+    document.getElementById('popupForm').style.display = 'block';
+    showStep(currentStep);
+}
+
+function closeForm() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('popupForm').style.display = 'none';
+    resetForm1();
+}
+
+function showStep(step) {
+
+    const steps = document.querySelectorAll('.form-step');
+    steps.forEach((s) => s.style.display = 'none');
+
+
+    steps[step].style.display = 'block';
+
+
+    if (step === 2) {
+        document.getElementById('confirmName').innerText = document.getElementById('name').value;
+        document.getElementById('confirmEmail').innerText = document.getElementById('email').value;
+    }
+}
+
+function nextStep(step) {
+    if (step === 1) {
+
+        currentStep++;
+        showStep(currentStep);
+    } else if (step === 2) {
+
+        currentStep++;
+        showStep(currentStep);
+    }
+}
+
+function prevStep(step) {
+    currentStep--;
+    showStep(currentStep);
+}
+
+function resetForm1() {
+    document.getElementById('multiStepForm').reset();
+    currentStep = 0;
+    showStep(currentStep);
+}
+
+
+
+
+//Switch Statements
+function displayGreeting() {
+    const now = new Date();
+    const hour = now.getHours();
+    let greeting;
+
+    if (hour < 12) {
+        greeting = "Good Morning!";
+    } else if (hour < 18) {
+        greeting = "Good Afternoon!";
+    } else {
+        greeting = "Good Evening!";
+    }
+
+
+    document.getElementById('greeting').innerText = greeting;
+}
+
+
+window.onload = function() {
+    displayGreeting();
+};
