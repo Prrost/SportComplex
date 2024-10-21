@@ -1,16 +1,34 @@
-/* General Styling */
+body {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.day-theme {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+.night-theme {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
 .bodyset-dance {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff4e6; /* Light lavender */
+    background-color: #fff4e6;
 }
 
 .standart-dance {
-    background-color: #faedcd; /* Lighter purple */
+    background-color: #faedcd;
     border-style: solid;
     border-width: 30px;
-    border-color: #faedcd; /* Matches the background */
+    border-color: #faedcd;
     border-radius: 10px;
 }
 
@@ -32,37 +50,49 @@
     padding-right: 10px;
 }
 
-/* Container for Dancing Classes Section */
+
 .top-word-colour-dance {
-    background-color: #f3e5f5; /* Light lavender or light purple */
-    color: #6a1b9a; /* Dark purple for text */
+    background-color: #f3e5f5;
+    color: #6a1b9a;
     width: 100%;
-    border: 2px solid #ba68c8; /* Medium purple border */
+    border: 2px solid #ba68c8;
     border-radius: 10px;
-    padding: 20px; /* Padding inside the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional subtle shadow for depth */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 20px 0; /* Optional margin for spacing */
+    margin: 20px 0;
 }
 
 
-
-
-.img-main-dance {
-    box-shadow: 0 4px 10px #ab47bc; /* Purple shadow */
-    border-radius: 5px;
-    width: 100%;
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
 }
 
-.img-secondary-dance {
+.thumbnail {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 5px;
+    cursor: pointer;
     box-shadow: 0 4px 10px #ab47bc;
     border-radius: 5px;
-    height: 300px;
+}
+
+/* Main Display Image */
+.img-main-dance {
+    box-shadow: 0 4px 10px #ab47bc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
 }
 
 hr {
     height: 3px;
-    background-color: #ab47bc; /* Purple horizontal line */
+    background-color: #ab47bc;
 }
 
 .wide-div {
@@ -71,7 +101,7 @@ hr {
 }
 
 .button-style-dance {
-    background-color: #ba68c8; /* Medium purple */
+    background-color: #ba68c8;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -91,7 +121,7 @@ hr {
 }
 
 a {
-    color: #6a1b9a; /* Dark purple */
+    color: #6a1b9a;
     text-decoration: none;
 }
 
@@ -120,9 +150,19 @@ a {
     display: flex;
 }
 
-.div-footer{
+.div-footer {
     padding-left: 10px;
     padding-bottom: 10px;
     background-color: rgb(196, 169, 221);
+}
 
+#largeImageContainer {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-large-dance {
+    max-width: 100%;
+    height: auto;
 }
