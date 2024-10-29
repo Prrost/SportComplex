@@ -82,9 +82,11 @@ let isDay = true;
 
 toggleThemeBtn.addEventListener('click', function() {
     if (isDay) {
+        document.getElementById("dark-light").style.backgroundColor = '#4f4181';
         document.body.style.backgroundColor = "#2c3e50";
         document.body.style.color = "#ecf0f1";
     } else {
+        document.getElementById("dark-light").style.backgroundColor = '#c9bcf5';
         document.body.style.backgroundColor = "#ecf0f1";
         document.body.style.color = "#2c3e50";
     }
