@@ -92,3 +92,62 @@ toggleThemeBtn.addEventListener('click', function() {
     }
     isDay = !isDay;
 });
+
+function registerUser() {
+    const username = document.getElementById("regUsername").value;
+    const password = document.getElementById("regPassword").value;
+
+    // Сохраняем имя пользователя и пароль в localStorage
+    localStorage.setItem("registeredUsername", username);
+    localStorage.setItem("registeredPassword", password);
+
+    alert("Registration successful! You can now log in.");
+}
+
+// Функция входа
+function login() {
+    const loginUsername = document.getElementById("loginUsername").value;
+    const loginPassword = document.getElementById("loginPassword").value;
+
+    // Получаем сохраненные данные из localStorage
+    const registeredUsername = localStorage.getItem("registeredUsername");
+    const registeredPassword = localStorage.getItem("registeredPassword");
+
+    // Проверяем данные для входа
+    if (loginUsername === registeredUsername && loginPassword === registeredPassword) {
+        localStorage.setItem("loggedInUser", loginUsername); // Сохраняем пользователя в localStorage
+        alert("Login successful!");
+        showLogoutButton();
+    } else {
+        alert("Invalid username or password.");
+    }
+}
+
+// Функция выхода
+function logout() {
+    localStorage.removeItem("loggedInUser"); // Удаление пользователя из localStorage
+    alert("Logged out successfully.");
+    hideLogoutButton();
+}
+
+// Функции для показа и скрытия кнопки выхода
+function showLogoutButton() {
+    document.getElementById("logoutButton").classList.remove("d-none");
+    document.getElementById("loginForm").classList.add("d-none");
+    document.getElementById("registrationForm").classList.add("d-none");
+}
+
+function hideLogoutButton() {
+    document.getElementById("logoutButton").classList.add("d-none");
+    document.getElementById("loginForm").classList.remove("d-none");
+    document.getElementById("registrationForm").classList.remove("d-none");
+}
+
+// Проверка статуса входа при загрузке страницы
+window.onload = function() {
+    if (localStorage.getItem("loggedInUser")) {
+        showLogoutButton();
+    } else {
+        hideLogoutButton();
+    }
+};
