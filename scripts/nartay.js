@@ -97,25 +97,25 @@ function registerUser() {
     const username = document.getElementById("regUsername").value;
     const password = document.getElementById("regPassword").value;
 
-    // Сохраняем имя пользователя и пароль в localStorage
+
     localStorage.setItem("registeredUsername", username);
     localStorage.setItem("registeredPassword", password);
 
     alert("Registration successful! You can now log in.");
 }
 
-// Функция входа
+
 function login() {
     const loginUsername = document.getElementById("loginUsername").value;
     const loginPassword = document.getElementById("loginPassword").value;
 
-    // Получаем сохраненные данные из localStorage
+
     const registeredUsername = localStorage.getItem("registeredUsername");
     const registeredPassword = localStorage.getItem("registeredPassword");
 
-    // Проверяем данные для входа
+
     if (loginUsername === registeredUsername && loginPassword === registeredPassword) {
-        localStorage.setItem("loggedInUser", loginUsername); // Сохраняем пользователя в localStorage
+        localStorage.setItem("loggedInUser", loginUsername);
         alert("Login successful!");
         showLogoutButton();
     } else {
@@ -123,14 +123,14 @@ function login() {
     }
 }
 
-// Функция выхода
+
 function logout() {
-    localStorage.removeItem("loggedInUser"); // Удаление пользователя из localStorage
+    localStorage.removeItem("loggedInUser");
     alert("Logged out successfully.");
     hideLogoutButton();
 }
 
-// Функции для показа и скрытия кнопки выхода
+
 function showLogoutButton() {
     document.getElementById("logoutButton").classList.remove("d-none");
     document.getElementById("loginForm").classList.add("d-none");
@@ -143,7 +143,7 @@ function hideLogoutButton() {
     document.getElementById("registrationForm").classList.remove("d-none");
 }
 
-// Проверка статуса входа при загрузке страницы
+
 window.onload = function() {
     if (localStorage.getItem("loggedInUser")) {
         showLogoutButton();

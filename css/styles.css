@@ -1,4 +1,4 @@
-/* Основные стили */
+
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -118,7 +118,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Стиль кнопок */
+
 .button-style {
     background-color: #b9f6a5;
     color: white;
@@ -159,7 +159,7 @@ a:hover {
     box-shadow: 0 4px 10px black;
 }
 
-/* Адаптивные стили */
+
 @media (max-width: 768px) {
     .navbar-nav {
         text-align: center;
@@ -174,7 +174,7 @@ a:hover {
     }
 }
 
-/* Классы для текста и цвета */
+
 .text-size {
     font-size: 20px;
 }
@@ -196,7 +196,7 @@ a:hover {
     width: 90%;
 }
 
-/* Стили для общего оформления */
+
 .bodyset {
     display: flex;
     justify-content: center;
@@ -220,7 +220,7 @@ a:hover {
     box-shadow: 0 4px 10px black;
 }
 
-/* Стили для списка создателей */
+
 .div-footer-g ul {
     text-align: center;
     padding-left: 20px;
