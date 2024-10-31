@@ -1,27 +1,32 @@
-.bodyset{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff4e6;
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
-.standart{
-    background-color: #faedcd;
-    border-style: solid;
-    border-width: 30px;
-    border-color: #faedcd;
-    border-radius: 10px;
+.navbar {
+    font-size: 18px;
 }
 
-.main-div{
-    width: 70%;
-    align-content: center;
-    background-color: rgb(246, 231, 186);
-    border: 0px solid black;
-    box-shadow: 0 4px 10px black;
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
 }
 
-.all-center{
+.nav-link {
+    color: #fff;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #004d00;
+}
+
+.all-center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,38 +35,91 @@
     padding-right: 10px;
 }
 
-.top-word-colour-index{
-    background-color: #b9f6a5;
-    width: 100%;
-}
-
-
-.top-word-colour-gym{
-    background-color: #49372a;
-    width: 100%;
-    border-style: solid;
-    border-radius: 10px;
-}
-
-
-.img-main{
+.img-main {
+    max-width: 100%;
+    height: auto;
     box-shadow: 0 4px 10px black;
     border-radius: 5px;
     width: 95%;
 }
 
-.img-secondary{
-    height: 300px;
-}
-
-
-
-.wide-div{
-    width: 100%;
+.wide-div {
+    padding: 20px;
+    margin: auto;
+    width: 80%;
     text-align: center;
 }
 
-.button-style{
+.card {
+    max-width: 250px;
+    margin: 10px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.table, .table td {
+    border: none;
+}
+
+.div-footer-g {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(182, 220, 176, 0.4);
+    text-align: center;
+}
+
+.footer-links a {
+    color: #b0e6a6;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup-form {
+    display: none;
+    position: fixed;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #004d00;
+    border: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стиль кнопок */
+.button-style {
     background-color: #b9f6a5;
     color: white;
     padding: 15px 32px;
@@ -81,8 +139,7 @@
     box-shadow: 0 4px 10px black;
 }
 
-
-.button-style-gym{
+.button-style-gym {
     background-color: #49372a;
     color: white;
     padding: 15px 32px;
@@ -100,85 +157,72 @@
     color: #4CAF50;
     border: 2px solid #000000;
     box-shadow: 0 4px 10px black;
-
 }
 
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
 
+    .card {
+        max-width: 100%;
+    }
 
-a{
-    color: black;
-    text-decoration: none;
+    .wide-div {
+        width: 100%;
+    }
 }
 
-.a{
-    text-decoration: underline;
-}
-
-.text-size{
+/* Классы для текста и цвета */
+.text-size {
     font-size: 20px;
 }
 
-.text-size-15{
+.text-size-15 {
     font-size: 15px;
 }
 
-#move-left{
-    justify-content: start;
-}
-
-#white-text{
-    color: white;
-}
-
-#white-text-button{
-    color: white;
-}
-
-.wide-div-button{
-    width: 100%;
-    display: flex;
-}
-
-.hr-colour-brown{
+.hr-colour-brown {
     background-color: #49372a;
 }
 
-
-.hr-colour-green{
+.hr-colour-green {
     background-color: #b9f6a5;
     height: 3px;
 }
 
-.width-90{
+.width-90 {
     width: 90%;
 }
 
-.div-footer-g{
-    padding-left: 10px;
-    padding-bottom: 10px;
-    background-color: rgba(182, 220, 176, 0.4);
-
+/* Стили для общего оформления */
+.bodyset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff4e6;
 }
 
-.div-footer-b{
-    padding-left: 10px;
-    padding-bottom: 10px;
-    background-color: rgba(187, 161, 96, 0.62);
-
+.standart {
+    background-color: #faedcd;
+    border-style: solid;
+    border-width: 30px;
+    border-color: #faedcd;
+    border-radius: 10px;
 }
 
-#fold{
-    display: none;
+.main-div {
+    width: 70%;
+    align-content: center;
+    background-color: rgb(246, 231, 186);
+    border: 0px solid black;
+    box-shadow: 0 4px 10px black;
 }
 
-#resetButton{}
-#subscribeButton{}
-
-
-.nav-link:focus {
-    outline: none;
-    background-color: transparent;
-    color: white;
-    border-radius: 5px;
-    padding: 5px 10px;
+/* Стили для списка создателей */
+.div-footer-g ul {
+    text-align: center;
+    padding-left: 20px;
+    list-style-type: none;
 }
