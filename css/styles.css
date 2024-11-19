@@ -226,3 +226,78 @@ a:hover {
     padding-left: 20px;
     list-style-type: none;
 }
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #004d00;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #006600;
+}
+/* Default (Light) theme styles */
+body {
+    background-color: white;
+    color: black;
+}
+
+a {
+    color: #007bff;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-theme a {
+    color: #bb86fc;
+}
+
+body.dark-theme hr {
+    border-top: 1px solid #444;
+}
+
+#theme-toggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+body.dark-theme #theme-toggle {
+    background-color: #6200ea;
+}
+
+/* Customize for gym page */
+.top-word-colour-gym h1 {
+    color: #6a4f4b;
+}
+.hr-colour-brown {
+    border-top: 1px solid #6a4f4b;
+}
+
+/* Position the theme toggle button */
+.text-center.mt-3 {
+    margin-top: 15px;
+}
+

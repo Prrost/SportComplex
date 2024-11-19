@@ -44,6 +44,14 @@
         </div>
     </nav>
 
+    <div class="button-container" style="text-align: center; padding-top: 20px;">
+
+        <button onclick="playSound()">Play Notification Sound</button>
+        <br><br>
+
+        <button class="button-style" onclick="toggleTheme()">Switch to Dark Theme</button>
+    </div>
+
     <div class="all-center">
         <br>
         <div class="top-word-colour-F">
@@ -81,8 +89,6 @@
             <p>If you have any questions or need more information, please feel free to <a
                     href="mailto:support@sportscomplex.com">contact us</a>.</p>
             <hr noshade="">
-            <!-- Button to play sound -->
-            <button onclick="playSound()">Play Notification Sound</button>
         </div>
     </div>
 
@@ -102,6 +108,23 @@
 
 </div>
 
+<script>
+
+    function toggleTheme() {
+        const body = document.body;
+        const button = document.querySelector('.button-style');
+        body.classList.toggle('dark-theme');
+
+        if (body.classList.contains('dark-theme')) {
+            button.textContent = "Switch to Light Theme";
+        } else {
+            button.textContent = "Switch to Dark Theme";
+        }
+
+        body.style.transition = 'background-color 0.5s, color 0.5s';
+    }
+
+</script>
 
 </body>
 </html>
