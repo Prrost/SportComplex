@@ -137,3 +137,66 @@ function displayGreeting() {
 window.onload = function() {
     displayGreeting();
 };
+document.addEventListener("DOMContentLoaded", () => {
+    const themeButton = document.getElementById('toggleThemeBtn');
+
+
+    themeButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+
+        if (document.body.classList.contains('dark-mode')) {
+            themeButton.textContent = 'Switch to Light Theme';
+        } else {
+            themeButton.textContent = 'Switch to Dark Theme';
+        }
+    });
+});
+// Функция для переключения темы
+function toggleTheme() {
+    const body = document.body;
+    const themeToggleButton = document.querySelector('.button-style');
+
+    // Проверяем, есть ли у body класс dark-theme
+    if (body.classList.contains('dark-theme')) {
+        // Если да, то убираем его и меняем текст на кнопке
+        body.classList.remove('dark-theme');
+        themeToggleButton.innerText = 'Switch to Dark Theme';
+    } else {
+        // Если нет, то добавляем класс dark-theme и меняем текст на кнопке
+        body.classList.add('dark-theme');
+        themeToggleButton.innerText = 'Switch to Light Theme';
+    }
+}
+const themeToggleBtn = document.getElementById("theme-toggle");
+
+if (themeToggleBtn) {
+    themeToggleBtn.addEventListener("click", () => {
+        const body = document.body;
+
+        // Toggle the dark-theme class on body
+        body.classList.toggle("dark-theme");
+
+        // Change the button text based on the current theme
+        if (body.classList.contains("dark-theme")) {
+            themeToggleBtn.textContent = "Switch to Light Theme";
+            localStorage.setItem("theme", "dark");  // Save the selected theme
+        } else {
+            themeToggleBtn.textContent = "Switch to Dark Theme";
+            localStorage.setItem("theme", "light");  // Save the selected theme
+        }
+    });
+
+    // Apply the saved theme on page load
+    window.addEventListener("DOMContentLoaded", () => {
+        const savedTheme = localStorage.getItem("theme");
+
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark-theme");
+            themeToggleBtn.textContent = "Switch to Light Theme";
+        } else {
+            themeToggleBtn.textContent = "Switch to Dark Theme";
+        }
+    });
+}
+
+
