@@ -61,7 +61,7 @@ const filteredClasses = classes.map(item => `${item.name} - ${item.price}`);
 
 // Play Sounds
 function playSound() {
-    const audio = new Audio('/sounds/notification.mp3');
+    const audio = new Audio('./notification.mp3');
     audio.play();
 }
 
